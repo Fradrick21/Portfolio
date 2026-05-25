@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fradrick Arockia Raj — MERN Stack Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Scan line -->
+<div class="scan"></div>
+
+<!-- Cursor -->
+<div id="cur"></div>
+<div id="cur-ring"></div>
+
+<!-- NAVBAR -->
+<nav>
+  <a href="#" class="nav-logo">FR<span>.</span>DEV</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certs">Certs</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="mailto:fradrickraj21@gmail.com" class="nav-cta">Let's Talk ↗</a>
+  <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile nav drawer -->
+<div class="nav-drawer" id="navDrawer">
+  <ul>
+    <li><a href="#about" onclick="closeDrawer()">About</a></li>
+    <li><a href="#skills" onclick="closeDrawer()">Skills</a></li>
+    <li><a href="#experience" onclick="closeDrawer()">Experience</a></li>
+    <li><a href="#projects" onclick="closeDrawer()">Projects</a></li>
+    <li><a href="#certs" onclick="closeDrawer()">Certs</a></li>
+    <li><a href="#contact" onclick="closeDrawer()">Contact</a></li>
+  </ul>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-left">
+    <div class="hero-badge"><div class="dot"></div>Available for New Projects</div>
+    <p class="hero-greeting">Hi, I'm <span>Fradrick Arockia Raj A</span></p>
+    <h1 class="hero-name">MERN<span class="blue"> Stack</span><br><span class="cyan">Developer</span></h1>
+    <div class="hero-tags">
+      <span class="htag">Full-Stack</span>
+      <span class="htag">REST API</span>
+      <span class="htag">Trichy, TN</span>
+      <span class="htag">MCA · 6.90 CGPA</span>
+    </div>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-blue">View Projects</a>
+      <a href="#contact" class="btn-outline">Contact Me</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-n">3<span>+</span></div>
+        <div class="stat-l">Month Exp.</div>
+      </div>
+      <div>
+        <div class="stat-n">5<span>+</span></div>
+        <div class="stat-l">Projects</div>
+      </div>
+      <div>
+        <div class="stat-n">6<span>.90</span></div>
+        <div class="stat-l">MCA CGPA</div>
+      </div>
+      <div>
+        <div class="stat-n">3<span>+</span></div>
+        <div class="stat-l">Certs</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="orbit-wrap" id="orbitWrap">
+      <!-- rings -->
+      <div class="o-ring o-ring-1"></div>
+      <div class="o-ring o-ring-2"></div>
+      <div class="o-ring o-ring-3"></div>
+
+      <!-- CENTER PHOTO — replace src with your photo URL -->
+      <div class="orbit-photo" id="photoEl">
+        <img src="Fradrick.jpeg" alt="Fradrick Arockia Raj">
+      </div>
+
+      <!-- Tech dots placed by JS -->
+    </div>
+
+    <!-- bottom strip -->
+    <div class="hero-strip">
+      <span class="hs-item">MongoDB</span>
+      <span class="hs-item">Express.js</span>
+      <span class="hs-item">React.js</span>
+      <span class="hs-item">Node.js</span>
+      <span class="hs-item">Tailwind</span>
+      <span class="hs-item">PostgreSQL</span>
+    </div>
+  </div>
+</section>
+<div class="neon-line"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-tag reveal">Who I Am</div>
+  <h2 class="section-title reveal">About <span>Me</span></h2>
+  <div class="about-grid reveal">
+    <div class="about-text">
+      <p>I'm <strong>Fradrick Arockia Raj A</strong>, a MERN Stack Developer based in Trichy, Tamil Nadu. I hold a Master of Computer Applications (MCA) with a CGPA of 6.90 from Bishop Heber College.</p>
+      <p>Currently working at <strong>Gobright</strong>, I build full-stack web applications — from pixel-perfect React frontends to scalable Node.js backends with MongoDB and PostgreSQL databases.</p>
+      <p>I'm passionate about clean code, real-world problem solving, and integrating AI into modern web products. Always open to exciting new projects and collaborations.</p>
+      <div class="about-highlights">
+        <div class="ah-item"><span class="ah-icon">📍</span><span>Trichy, Tamil Nadu</span></div>
+        <div class="ah-item"><span class="ah-icon">🎓</span><span>MCA — Bishop Heber College</span></div>
+        <div class="ah-item"><span class="ah-icon">💼</span><span>MERN Stack Developer @ Gobright</span></div>
+        <div class="ah-item"><span class="ah-icon">📧</span><span>fradrickraj21@gmail.com</span></div>
+      </div>
+    </div>
+    <div class="about-skills-aside">
+      <div class="aside-block">
+        <div class="aside-title">Languages</div>
+        <div class="aside-tags"><span class="stag">JavaScript</span><span class="stag">Java</span><span class="stag">HTML5</span><span class="stag">CSS3</span></div>
+      </div>
+      <div class="aside-block">
+        <div class="aside-title">Frameworks</div>
+        <div class="aside-tags"><span class="stag">React.js</span><span class="stag">Node.js</span><span class="stag">Express.js</span><span class="stag">Tailwind</span></div>
+      </div>
+      <div class="aside-block">
+        <div class="aside-title">Databases</div>
+        <div class="aside-tags"><span class="stag">MongoDB</span><span class="stag">PostgreSQL</span></div>
+      </div>
+      <div class="aside-block">
+        <div class="aside-title">Tools</div>
+        <div class="aside-tags"><span class="stag">Git</span><span class="stag">GitHub</span><span class="stag">Postman</span><span class="stag">VS Code</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="neon-line"></div>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-tag reveal">Skills & Expertise</div>
+  <div class="sh reveal">
+    <h2 class="section-title">What I<br><span>Build</span></h2>
+    <a href="#contact" class="view-all">Hire Me →</a>
+  </div>
+
+  <div class="skills-grid stag-c">
+    <div class="sk-card">
+      <div class="sk-num">01</div>
+      <div class="sk-icon">⚛️</div>
+      <div class="sk-title">Frontend Dev</div>
+      <p class="sk-desc">Pixel-perfect, responsive UIs with React.js, HTML5, CSS3 & Tailwind. Fast, accessible, beautiful.</p>
+      <div class="sk-tags"><span class="stag">React.js</span><span class="stag">HTML5</span><span class="stag">Tailwind</span></div>
+    </div>
+    <div class="sk-card">
+      <div class="sk-num">02</div>
+      <div class="sk-icon">🔧</div>
+      <div class="sk-title">Backend Dev</div>
+      <p class="sk-desc">Robust server logic, REST APIs & JWT authentication systems with Node.js and Express.js.</p>
+      <div class="sk-tags"><span class="stag">Node.js</span><span class="stag">Express</span><span class="stag">JWT</span><span class="stag">REST</span></div>
+    </div>
+    <div class="sk-card">
+      <div class="sk-num">03</div>
+      <div class="sk-icon">🗄️</div>
+      <div class="sk-title">Database</div>
+      <p class="sk-desc">Designing and managing data models with MongoDB & PostgreSQL for scalable applications.</p>
+      <div class="sk-tags"><span class="stag">MongoDB</span><span class="stag">PostgreSQL</span><span class="stag">CRUD</span></div>
+    </div>
+    <div class="sk-card">
+      <div class="sk-num">04</div>
+      <div class="sk-icon">🚀</div>
+      <div class="sk-title">Full-Stack</div>
+      <p class="sk-desc">End-to-end MERN stack development — connecting modern frontends to scalable backends.</p>
+      <div class="sk-tags"><span class="stag">MERN</span><span class="stag">API Integration</span><span class="stag">Deployment</span></div>
+    </div>
+    <div class="sk-card">
+      <div class="sk-num">05</div>
+      <div class="sk-icon">🛠️</div>
+      <div class="sk-title">Dev Tools</div>
+      <p class="sk-desc">Efficient workflow using Git for version control, Postman for API testing, VS Code extensions.</p>
+      <div class="sk-tags"><span class="stag">Git</span><span class="stag">GitHub</span><span class="stag">Postman</span></div>
+    </div>
+  </div>
+</section>
+<div class="neon-line"></div>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-tag reveal">Work History</div>
+  <h2 class="section-title reveal">Professional<br><span>Experience</span></h2>
+
+  <div class="exp-row reveal">
+    <div>
+      <div class="exp-date">Feb 2026 — Present</div>
+      <div class="exp-co">Gobright · Trichy</div>
+    </div>
+    <div>
+      <div class="exp-role">MERN Stack Developer</div>
+      <ul class="exp-ul">
+        <li>Building full-stack web applications using MongoDB, Express.js, React.js, and Node.js as part of the core development team at Gobright.</li>
+        <li>Developing responsive UIs with React.js & Tailwind CSS, creating and integrating REST APIs for backend functionality.</li>
+        <li>Hands-on experience in backend development, database management, JWT authentication, and project deployment via Git and GitHub.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="exp-row reveal">
+    <div>
+      <div class="exp-date">2024</div>
+      <div class="exp-co">Techno Hacks EduTech</div>
+    </div>
+    <div>
+      <div class="exp-role">Java Development Intern</div>
+      <ul class="exp-ul">
+        <li>Completed a Java development internship gaining core programming fundamentals and real-world software engineering practices.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<div class="neon-line"></div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-tag reveal">Portfolio</div>
+  <div class="sh reveal">
+    <h2 class="section-title">Featured<br><span>Projects</span></h2>
+    <a href="https://github.com/Fradrick21" target="_blank" class="view-all">GitHub ↗</a>
+  </div>
+  <div class="proj-grid stag-c">
+    <div class="proj-card">
+      <div class="proj-thumb"><div class="glow-blob"></div><div class="proj-thumb-text">AI.VID</div></div>
+      <div class="proj-body">
+        <div class="proj-num">01 / Featured</div>
+        <div class="proj-name">AI Short Video Generator</div>
+        <p class="proj-desc">A backend web app using Node.js that generates short videos from user text input. Handles request processing, backend logic, and data transformation pipelines with improved performance.</p>
+        <div class="proj-tags"><span class="stag">React</span><span class="stag">Node.js</span><span class="stag">REST API</span><span class="stag">AI</span></div>
+      </div>
+    </div>
+    <div class="proj-card">
+      <div class="proj-thumb" style="background:linear-gradient(135deg,#040f1c,#071425)">
+        <div class="glow-blob" style="background:radial-gradient(circle,rgba(0,212,255,.2),transparent 70%);"></div>
+        <div class="proj-thumb-text" style="color:rgba(0,212,255,.07)">MERN</div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-num">02 / Full-Stack</div>
+        <div class="proj-name">Full-Stack Web Application</div>
+        <p class="proj-desc">Complete MERN stack application with responsive UI, RESTful backend, MongoDB database, JWT authentication, and seamless API integration for real-world use.</p>
+        <div class="proj-tags"><span class="stag">MongoDB</span><span class="stag">Express</span><span class="stag">React</span><span class="stag">Node</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="neon-line"></div>
+
+<!-- EDUCATION -->
+<section id="edu">
+  <div class="section-tag reveal">Education</div>
+  <h2 class="section-title reveal">Academic<br><span>Background</span></h2>
+  <div class="exp-row reveal">
+    <div>
+      <div class="exp-date">2023 — 2025</div>
+      <div class="exp-co">Bishop Heber College</div>
+    </div>
+    <div>
+      <div class="exp-role">Master of Computer Application (MCA)</div>
+      <ul class="exp-ul">
+        <li>Graduated with a CGPA of <strong style="color:var(--text)">7.03</strong>, building strong foundations in software engineering, data structures, algorithms, and modern web development technologies.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<div class="neon-line"></div>
+
+<!-- CERTS -->
+<section id="certs" style="background:var(--bg2)">
+  <div class="section-tag reveal">Recognition</div>
+  <h2 class="section-title reveal">Certifications</h2>
+  <div class="certs-grid stag-c">
+    <div class="cert-card">
+      <div class="cert-ico">🤖</div>
+      <div class="cert-title">AI Programming</div>
+      <div class="cert-sub">Naan Mudhalvan Scheme · Govt. of Tamil Nadu</div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-ico">📊</div>
+      <div class="cert-title">MS Excel</div>
+      <div class="cert-sub">CSS Computer Education</div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-ico">☕</div>
+      <div class="cert-title">Java Development</div>
+      <div class="cert-sub">Techno Hacks EduTech — Internship Certificate</div>
+    </div>
+  </div>
+</section>
+<div class="neon-line"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-wrap">
+    <div class="contact-pre reveal">Get in touch</div>
+    <h2 class="contact-big reveal">Let's Build<br>Something <span>Together.</span></h2>
+    <p class="contact-sub reveal">Open to full-time roles, freelance projects, and collaborations. Actively looking for my next opportunity.</p>
+    <div class="contact-grid reveal">
+      <a href="mailto:fradrickraj21@gmail.com" class="c-link"><span class="ci">✉️</span>fradrickraj21@gmail.com</a>
+      <a href="tel:9384975367" class="c-link"><span class="ci">📞</span>9384975367</a>
+      <a href="https://linkedin.com/in/fradrick-arockia-raj-a15695297" target="_blank" class="c-link"><span class="ci">💼</span>LinkedIn</a>
+      <a href="https://github.com/Fradrick21" target="_blank" class="c-link"><span class="ci">🐙</span>GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="f-logo">FR<span>.</span>DEV</div>
+  <div class="f-copy">© 2025 Fradrick Arockia Raja — MERN Stack Developer · Trichy, Tamil Nadu</div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
